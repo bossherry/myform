@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2></h2>
+    <script>
+        let text=document.querySelector('h2');
+        let data=window.location.search;
+        if(data===''){
+            text.innerText='请登录后使用!';
+        }
+          else{
+            let newdata=data.split('=')[1];
+           // console.log(newdata);
+           text.innerText="恭喜用户 "+newdata+" 登录成功！";
+         }
+
+    </script>
+</body>
+</html>
